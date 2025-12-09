@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        display: ["Cormorant Garamond", "serif"],
+        body: ["Quicksand", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,6 +51,17 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        cosmic: {
+          purple: "hsl(var(--cosmic-purple))",
+          "purple-light": "hsl(var(--cosmic-purple-light))",
+          "purple-dark": "hsl(var(--cosmic-purple-dark))",
+          gold: "hsl(var(--cosmic-gold))",
+          "gold-light": "hsl(var(--cosmic-gold-light))",
+          aqua: "hsl(var(--cosmic-aqua))",
+          "aqua-light": "hsl(var(--cosmic-aqua-light))",
+          white: "hsl(var(--cosmic-white))",
+          glow: "hsl(var(--cosmic-glow))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -65,20 +80,12 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
