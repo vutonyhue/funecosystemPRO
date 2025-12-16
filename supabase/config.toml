@@ -1,1 +1,4 @@
 project_id = "lmpdkmtldrbascvjgsjh"
+
+[functions.angel-ai-proxy]
+verify_jwt = false

@@ -5,6 +5,7 @@ import PrinciplesSection from "@/components/landing/PrinciplesSection";
 import LeadershipSection from "@/components/landing/LeadershipSection";
 import MantrasSection from "@/components/landing/MantrasSection";
 import Footer from "@/components/landing/Footer";
+import AngelAIChatButton from "@/components/angel-ai/AngelAIChatButton";
 import { Helmet } from "react-helmet-async";
 
 const Index = () => {
@@ -32,6 +33,8 @@ const Index = () => {
         <MantrasSection />
         <Footer />
       </main>
+      
+      <AngelAIChatButton />
     </>
   );
 };
